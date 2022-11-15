@@ -11,10 +11,11 @@ final class FirstViewController: UIViewController {
 
     @IBOutlet weak var infoLbl: UILabel!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     // MARK: - Actions
@@ -39,9 +40,24 @@ final class FirstViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func goToVCBySeparetadStoryboardWithoutSegue() {
+        let storyboard = UIStoryboard(name: "SecondStoryboard", bundle: nil)
+        if let fourthVC = storyboard.instantiateViewController(
+            withIdentifier: "FourthViewController") as? FourthViewController {
+            fourthVC.dataString = "Передача данных на SecondVC без Segue"
+            navigationController?.pushViewController(fourthVC, animated: true)
+        }
+    }
+    
+// передача данных с SecondStoryboard в label первого Storyboard
+    @IBAction func unwindToFirst(_ unwindSegue: UIStoryboardSegue) {
+//        if let sourceViewController = unwindSegue.source as? FourthViewController {
+//            infoLbl.text = sourceViewController.dataString
+//        }
+        
+    }
     
     // MARK: - Private functions
-    
 
     
     // MARK: - Navigation
@@ -50,6 +66,8 @@ final class FirstViewController: UIViewController {
         if let str = sender as? String,
             let secondVC = segue.destination as? SecondViewController {
             secondVC.str = str
+        } else if let fourthVC = segue.destination as? FourthViewController {
+            fourthVC.dataString = "Переход на SecondStoryboard"
         }
     }
 }

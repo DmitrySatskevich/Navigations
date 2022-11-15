@@ -19,9 +19,14 @@ class FourthViewController: UIViewController {
         label.text = dataString
     }
     
-    
     @IBAction func goBack() {
         performSegue(withIdentifier: "unwindToFirstVC", sender: "unwindToFirstVC from FourthVC")
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let str = sender as? String,
+            let firthVC = segue.destination as? SecondViewController {
+            firthVC.infoLbl.text = str
+        }
+    }
 }

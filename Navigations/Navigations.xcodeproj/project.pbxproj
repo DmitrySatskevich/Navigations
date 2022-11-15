@@ -88,8 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				F5EC4E67292398FD00E48021 /* Main.storyboard */,
-				F5EC4E7D2923AF8F00E48021 /* ThirdViewController.xib */,
 				F5EC4E802923B34500E48021 /* SecondStoryboard.storyboard */,
+				F5EC4E7D2923AF8F00E48021 /* ThirdViewController.xib */,
 				F5EC4E6C292398FE00E48021 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
