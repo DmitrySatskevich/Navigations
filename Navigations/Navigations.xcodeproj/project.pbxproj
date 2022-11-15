@@ -14,6 +14,10 @@
 		F5EC4E6E292398FE00E48021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EC4E6C292398FE00E48021 /* LaunchScreen.storyboard */; };
 		F5EC4E792923A26F00E48021 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EC4E782923A26F00E48021 /* FirstViewController.swift */; };
 		F5EC4E7B2923A28400E48021 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EC4E7A2923A28400E48021 /* SecondViewController.swift */; };
+		F5EC4E7E2923AF8F00E48021 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EC4E7C2923AF8F00E48021 /* ThirdViewController.swift */; };
+		F5EC4E7F2923AF8F00E48021 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5EC4E7D2923AF8F00E48021 /* ThirdViewController.xib */; };
+		F5EC4E812923B34500E48021 /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EC4E802923B34500E48021 /* SecondStoryboard.storyboard */; };
+		F5EC4E832923B42400E48021 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EC4E822923B42400E48021 /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		F5EC4E6F292398FE00E48021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5EC4E782923A26F00E48021 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F5EC4E7A2923A28400E48021 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F5EC4E7C2923AF8F00E48021 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F5EC4E7D2923AF8F00E48021 /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		F5EC4E802923B34500E48021 /* SecondStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondStoryboard.storyboard; sourceTree = "<group>"; };
+		F5EC4E822923B42400E48021 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				F5EC4E67292398FD00E48021 /* Main.storyboard */,
+				F5EC4E7D2923AF8F00E48021 /* ThirdViewController.xib */,
+				F5EC4E802923B34500E48021 /* SecondStoryboard.storyboard */,
 				F5EC4E6C292398FE00E48021 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -90,6 +100,8 @@
 			children = (
 				F5EC4E782923A26F00E48021 /* FirstViewController.swift */,
 				F5EC4E7A2923A28400E48021 /* SecondViewController.swift */,
+				F5EC4E7C2923AF8F00E48021 /* ThirdViewController.swift */,
+				F5EC4E822923B42400E48021 /* FourthViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +166,8 @@
 			files = (
 				F5EC4E6E292398FE00E48021 /* LaunchScreen.storyboard in Resources */,
 				F5EC4E6B292398FE00E48021 /* Assets.xcassets in Resources */,
+				F5EC4E812923B34500E48021 /* SecondStoryboard.storyboard in Resources */,
+				F5EC4E7F2923AF8F00E48021 /* ThirdViewController.xib in Resources */,
 				F5EC4E69292398FD00E48021 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EC4E832923B42400E48021 /* FourthViewController.swift in Sources */,
 				F5EC4E7B2923A28400E48021 /* SecondViewController.swift in Sources */,
 				F5EC4E792923A26F00E48021 /* FirstViewController.swift in Sources */,
+				F5EC4E7E2923AF8F00E48021 /* ThirdViewController.swift in Sources */,
 				F5EC4E62292398FD00E48021 /* AppDelegate.swift in Sources */,
 				F5EC4E64292398FD00E48021 /* SceneDelegate.swift in Sources */,
 			);

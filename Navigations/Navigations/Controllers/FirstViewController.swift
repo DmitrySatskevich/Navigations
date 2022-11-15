@@ -32,6 +32,14 @@ final class FirstViewController: UIViewController {
         }
     }
     
+    @IBAction func goToThirdVCByXIB() {
+        let vc = ThirdViewController(nibName: "ThirdViewController", bundle: nil)
+        vc.dataString = "Переход из первого"
+        vc.navigationItem.title = "XIB VC"
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     // MARK: - Private functions
     
 
