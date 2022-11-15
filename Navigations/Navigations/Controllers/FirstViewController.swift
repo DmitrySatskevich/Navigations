@@ -23,6 +23,14 @@ final class FirstViewController: UIViewController {
         performSegue(withIdentifier: "GoToSecondVCModally", sender: "From first VC")
     }
     
+    @IBAction func goToSecondWithoutSegue() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let secondVC = storyboard.instantiateViewController(
+            withIdentifier: "SecondViewController") as? SecondViewController {
+            secondVC.str = "Передача данных на SecondVC без использования Segue"
+            navigationController?.pushViewController(secondVC, animated: true)
+        }
+    }
     
     // MARK: - Private functions
     
